@@ -7,12 +7,16 @@ namespace LinkedList
 {
     public class DoublyLinkedList<T> : ICollection<T>
     {
-        internal class Node
-        {
-            internal T Value { get; private set; }
-            internal Node Next { get; set; }
+        private DoublyNode Head { get; set; }
+        private DoublyNode Tail { get; set; }
 
-            public Node(T value)
+        protected class DoublyNode
+        {
+            internal T Value { get; }
+            internal DoublyNode Next { get; set; }
+            internal DoublyNode Previous { get; set; }
+
+            public DoublyNode(T value)
             {
                 Value = value;
             }
@@ -31,12 +35,24 @@ namespace LinkedList
 
         public void Add(T item)
         {
-            throw new NotImplementedException();
+            var nodeToAdd = new DoublyNode(item);
+            if (Head == null)
+            {
+                Head = Tail = nodeToAdd;
+            }
+            else
+            {
+                Tail.Next = nodeToAdd;
+                Tail = nodeToAdd;
+            }
+
+            ++Count;
         }
 
         public void Clear()
         {
-            throw new NotImplementedException();
+            Head = Tail = null;
+            Count = 0;
         }
 
         public bool Contains(T item)
@@ -54,7 +70,7 @@ namespace LinkedList
             throw new NotImplementedException();
         }
 
-        public int Count { get; }
-        public bool IsReadOnly { get; }
+        public int Count { get; private set; }
+        public bool IsReadOnly => false;
     }
 }
