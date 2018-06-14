@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayList", "ArrayList\Arra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayListTestProject", "ArrayListTestProject\ArrayListTestProject.csproj", "{D37E10FA-38C8-468C-91C3-D2041E6BDE70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueues", "StackAndQueues\StackAndQueues.csproj", "{A13EEF56-E61B-40F5-B90F-A3A32AAB8001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueues", "StackAndQueues\StackAndQueues.csproj", "{A13EEF56-E61B-40F5-B90F-A3A32AAB8001}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacksAndQueuesTests", "StacksAndQueuesTests\StacksAndQueuesTests.csproj", "{7B4A6767-51C4-4D2E-AD27-7AB76C4D5B4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StacksAndQueuesTests", "StacksAndQueuesTests\StacksAndQueuesTests.csproj", "{7B4A6767-51C4-4D2E-AD27-7AB76C4D5B4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{5E9046F8-4966-4CD7-8DBD-69EC53F38AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeTests", "BinarySearchTreeTests\BinarySearchTreeTests.csproj", "{3FA32607-A27E-40F5-960C-07EDBC2BED6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{7B4A6767-51C4-4D2E-AD27-7AB76C4D5B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4A6767-51C4-4D2E-AD27-7AB76C4D5B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4A6767-51C4-4D2E-AD27-7AB76C4D5B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9046F8-4966-4CD7-8DBD-69EC53F38AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9046F8-4966-4CD7-8DBD-69EC53F38AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9046F8-4966-4CD7-8DBD-69EC53F38AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9046F8-4966-4CD7-8DBD-69EC53F38AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA32607-A27E-40F5-960C-07EDBC2BED6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA32607-A27E-40F5-960C-07EDBC2BED6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA32607-A27E-40F5-960C-07EDBC2BED6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA32607-A27E-40F5-960C-07EDBC2BED6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
