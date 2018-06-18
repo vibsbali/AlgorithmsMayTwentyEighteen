@@ -237,8 +237,6 @@ namespace BinarySearchTreeTests
          Assert.AreEqual(750, bst.Head.Right.Value);
          Assert.IsNull(bst.Head.Right.Left);
       }
-
-
    }
 
 
