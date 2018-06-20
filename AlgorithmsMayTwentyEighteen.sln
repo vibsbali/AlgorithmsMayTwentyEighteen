@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTree", "BinaryS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTreeTests", "BinarySearchTreeTests\BinarySearchTreeTests.csproj", "{3FA32607-A27E-40F5-960C-07EDBC2BED6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{F164124A-0155-4F9C-B78F-A727FB86DA03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "Sorting\Sorting.csproj", "{F164124A-0155-4F9C-B78F-A727FB86DA03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingTests", "SortingTests\SortingTests.csproj", "{8A662616-97EB-45A7-8CC9-0D56A3E5FD2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingTests", "SortingTests\SortingTests.csproj", "{8A662616-97EB-45A7-8CC9-0D56A3E5FD2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapDataStructure", "HeapDataStructure\HeapDataStructure.csproj", "{1E7E50E8-0908-4F33-AFCD-D3F0159C3B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxHeapTests", "MaxHeapTests\MaxHeapTests.csproj", "{D81F3255-17E0-40BA-8CE1-BA3D06F3E255}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{8A662616-97EB-45A7-8CC9-0D56A3E5FD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A662616-97EB-45A7-8CC9-0D56A3E5FD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A662616-97EB-45A7-8CC9-0D56A3E5FD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7E50E8-0908-4F33-AFCD-D3F0159C3B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7E50E8-0908-4F33-AFCD-D3F0159C3B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7E50E8-0908-4F33-AFCD-D3F0159C3B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7E50E8-0908-4F33-AFCD-D3F0159C3B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81F3255-17E0-40BA-8CE1-BA3D06F3E255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81F3255-17E0-40BA-8CE1-BA3D06F3E255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81F3255-17E0-40BA-8CE1-BA3D06F3E255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81F3255-17E0-40BA-8CE1-BA3D06F3E255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

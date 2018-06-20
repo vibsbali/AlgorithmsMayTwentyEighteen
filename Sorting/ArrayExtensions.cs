@@ -1,10 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Sorting
 {
    public static class ArrayExtensions
    {
       public static void Swap<T>(this T[] arrayToBeSorted, int i, int j)
+      {
+         var temp = arrayToBeSorted[j];
+         arrayToBeSorted[j] = arrayToBeSorted[i];
+         arrayToBeSorted[i] = temp;
+      }
+
+      public static void Swap<T>(this IList<T> arrayToBeSorted, int i, int j)
       {
          var temp = arrayToBeSorted[j];
          arrayToBeSorted[j] = arrayToBeSorted[i];
