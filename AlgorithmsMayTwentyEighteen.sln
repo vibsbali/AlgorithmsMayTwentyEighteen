@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSearchAlgorithms", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSearchAlgorithmsTests", "StringSearchAlgorithmsTests\StringSearchAlgorithmsTests.csproj", "{44FB2D8E-042E-4C0C-836C-43F328EECEC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{DAC48C70-92C9-4B43-B5E1-F5EAB08FA3AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC48C70-92C9-4B43-B5E1-F5EAB08FA3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC48C70-92C9-4B43-B5E1-F5EAB08FA3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC48C70-92C9-4B43-B5E1-F5EAB08FA3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC48C70-92C9-4B43-B5E1-F5EAB08FA3AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
