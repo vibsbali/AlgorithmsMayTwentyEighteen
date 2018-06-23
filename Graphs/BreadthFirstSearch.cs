@@ -62,10 +62,5 @@ namespace Graphs
       public int Goal { get; private set; }
 
       public int VertexToSearch { get; private set; }
-
-      public List<int> TryGetPath(int startingVertex, int goalVertex)
-      {
-         throw new NotImplementedException();
-      }
    }
 }
