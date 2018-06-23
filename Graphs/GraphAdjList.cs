@@ -6,7 +6,7 @@ namespace Graphs
    public class GraphAdjList : IGraph
    {
       private readonly Dictionary<int, List<int>> adjList;
-      public GraphAdjList(int[] vertices)
+      public GraphAdjList(int[] vertices, bool isDirected = true)
       {
          adjList = new Dictionary<int, List<int>>(vertices.Length);
          foreach (var vertex in vertices)
@@ -15,6 +15,7 @@ namespace Graphs
          }
 
          NumberOfVertices = adjList.Count;
+         IsDirected = isDirected;
       }
 
       public int NumberOfVertices { get; private set; }
@@ -35,6 +36,12 @@ namespace Graphs
          {
             adjList[firstVertex].Add(secondVertex);
             ++NumberOfEdges;
+
+            if (!IsDirected)
+            {
+               adjList[secondVertex].Add(firstVertex);
+               ++NumberOfEdges;
+            }
          }
       }
 
@@ -42,5 +49,7 @@ namespace Graphs
       {
          return adjList[vertex];
       }
+
+      public bool  IsDirected { get; private set; }
    }
 }

@@ -9,10 +9,12 @@ namespace Graphs
       private int[,] adjMatrix;
       private readonly List<int> vertices;
 
-      public GraphAdjMatrix(int[] vertices)
+      public GraphAdjMatrix(int[] vertices, bool isDirected = true)
       {
          this.vertices = vertices.ToList();
          adjMatrix = new int[NumberOfVertices, NumberOfVertices];
+
+         IsDirected = isDirected;
       }
 
       public int NumberOfVertices => vertices.Count;
@@ -51,6 +53,12 @@ namespace Graphs
             adjMatrix[firstVertex, secondVertex] = 1;
             NumberOfEdges++;
          }
+
+         if (adjMatrix[secondVertex, firstVertex] != 1)
+         {
+            adjMatrix[secondVertex, firstVertex] = 1;
+            NumberOfEdges++;
+         }
       }
 
       public List<int> GetNeighbours(int vertex)
@@ -67,5 +75,7 @@ namespace Graphs
 
          return neighbours;
       }
+
+      public bool IsDirected { get; private set; }
    }
 }

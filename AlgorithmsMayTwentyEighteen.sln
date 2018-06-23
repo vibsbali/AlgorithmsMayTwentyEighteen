@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayListTestProject", "Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{1C54B53D-C35C-451F-BC70-D99FCB8569FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTests", "GraphTests\GraphTests.csproj", "{67F982F6-3417-4A25-A538-54B2C6803DE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{1C54B53D-C35C-451F-BC70-D99FCB8569FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C54B53D-C35C-451F-BC70-D99FCB8569FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C54B53D-C35C-451F-BC70-D99FCB8569FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F982F6-3417-4A25-A538-54B2C6803DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F982F6-3417-4A25-A538-54B2C6803DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F982F6-3417-4A25-A538-54B2C6803DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F982F6-3417-4A25-A538-54B2C6803DE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
