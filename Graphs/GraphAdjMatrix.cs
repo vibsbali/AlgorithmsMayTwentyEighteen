@@ -16,7 +16,8 @@ namespace Graphs
       }
 
       public int NumberOfVertices => vertices.Count;
-      public int NumberOfEdges { get; }
+      public int NumberOfEdges { get; private set; }
+
       public void AddVertex()
       {
          //add next vertices
@@ -45,7 +46,11 @@ namespace Graphs
             throw new IndexOutOfRangeException();
          }
 
-         adjMatrix[firstVertex, secondVertex] = 1;
+         if (adjMatrix[firstVertex, secondVertex] != 1)
+         {
+            adjMatrix[firstVertex, secondVertex] = 1;
+            NumberOfEdges++;
+         }
       }
 
       public List<int> GetNeighbours(int vertex)
