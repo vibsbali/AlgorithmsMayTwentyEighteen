@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{7470ABF6-67E0-437E-991C-8F306BAD57C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{1C54B53D-C35C-451F-BC70-D99FCB8569FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTests", "TestProject\LinkedListTests.csproj", "{1C54B53D-C35C-451F-BC70-D99FCB8569FE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayList", "ArrayList\ArrayList.csproj", "{6967A5FE-3435-423E-8B59-AB596C3A673E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayListTestProject", "ArrayListTestProject\ArrayListTestProject.csproj", "{D37E10FA-38C8-468C-91C3-D2041E6BDE70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayListTests", "ArrayListTestProject\ArrayListTests.csproj", "{D37E10FA-38C8-468C-91C3-D2041E6BDE70}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueues", "StackAndQueues\StackAndQueues.csproj", "{A13EEF56-E61B-40F5-B90F-A3A32AAB8001}"
 EndProject
@@ -30,6 +30,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tries", "Tries\Tries.csproj", "{A55D97F5-4A25-4873-89C9-448291660C0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrieTests", "TrieTests\TrieTests.csproj", "{6973C7CC-93DF-4E39-8791-26B54B06591D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSearchAlgorithms", "StringSearchAlgorithms\StringSearchAlgorithms.csproj", "{5DA59A9F-9540-4BA2-9C7A-8D48143EE07F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSearchAlgorithmsTests", "StringSearchAlgorithmsTests\StringSearchAlgorithmsTests.csproj", "{44FB2D8E-042E-4C0C-836C-43F328EECEC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{6973C7CC-93DF-4E39-8791-26B54B06591D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6973C7CC-93DF-4E39-8791-26B54B06591D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6973C7CC-93DF-4E39-8791-26B54B06591D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA59A9F-9540-4BA2-9C7A-8D48143EE07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA59A9F-9540-4BA2-9C7A-8D48143EE07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA59A9F-9540-4BA2-9C7A-8D48143EE07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA59A9F-9540-4BA2-9C7A-8D48143EE07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FB2D8E-042E-4C0C-836C-43F328EECEC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
