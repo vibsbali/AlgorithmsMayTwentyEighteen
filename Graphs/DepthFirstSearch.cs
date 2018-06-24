@@ -12,6 +12,7 @@ namespace Graphs
       }
 
       public IGraph GraphToSearch { get; private set; }
+      public Dictionary<int, int> ParentMap { get; set; } = new Dictionary<int, int>();
 
       public bool CanFind(int startingVertex, int goalVertex)
       {
@@ -20,7 +21,7 @@ namespace Graphs
             throw new InvalidOperationException();
          }
 
-         VertexToSearch = startingVertex;
+         StartingVertex = startingVertex;
          Goal = goalVertex;
 
          //stack of vertex to search next
@@ -54,6 +55,7 @@ namespace Graphs
             foreach (var neighbour in listOfNeighbours.Where(n => !dictionaryOfVisited.ContainsKey(n)))
             {
                stack.Push(neighbour);
+               ParentMap.AddOrUpdate(neighbour, currentVertex);
             }
          }
 
@@ -62,6 +64,32 @@ namespace Graphs
 
       public int Goal { get; private set; }
 
-      public int VertexToSearch { get; private set; }
+      public int StartingVertex { get; private set; }
+
+      public List<int> PathToGoal()
+      {
+         var stack = new Stack<int>();
+         stack.Push(Goal);
+         while (stack.Peek() != StartingVertex)
+         {
+            var current = ParentMap[stack.Peek()];
+            stack.Push(current);
+         }
+
+         return stack.ToList();
+      }
+   }
+
+   public static class DictionaryExtensions
+   {
+      public static void AddOrUpdate(this Dictionary<int, int> dictionary, int key, int value)
+      {
+         if (dictionary.ContainsKey(key))
+         {
+            dictionary.Remove(key);
+         }
+
+         dictionary.Add(key, value);
+      }
    }
 }

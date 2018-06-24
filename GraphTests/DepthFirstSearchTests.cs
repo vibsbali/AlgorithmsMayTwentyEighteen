@@ -30,6 +30,13 @@ namespace GraphTests
          var dfs = new DepthFirstSearch(graph);
          var result = dfs.CanFind(0, 12);
          Assert.IsTrue(result);
+
+         var direction = dfs.PathToGoal();
+         Assert.AreEqual(12, direction[4]);
+         Assert.AreEqual(11, direction[3]);
+         Assert.AreEqual(10, direction[2]);
+         Assert.AreEqual(9, direction[1]);
+         Assert.AreEqual(0, direction[0]);
       }
 
       [TestMethod]
@@ -82,6 +89,17 @@ namespace GraphTests
          var dfs = new DepthFirstSearch(graph);
          var result = dfs.CanFind(0, 8);
          Assert.IsTrue(result);
+
+         var direction = dfs.PathToGoal();
+         Assert.AreEqual(8, direction[8]);
+         Assert.AreEqual(7, direction[7]);
+         Assert.AreEqual(6, direction[6]);
+         Assert.AreEqual(5, direction[5]);
+         Assert.AreEqual(4, direction[4]);
+         Assert.AreEqual(3, direction[3]);
+         Assert.AreEqual(2, direction[2]);
+         Assert.AreEqual(1, direction[1]);
+         Assert.AreEqual(0, direction[0]);
       }
    }
 }
