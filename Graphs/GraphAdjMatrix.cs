@@ -8,16 +8,22 @@ namespace Graphs
    {
       private int[,] adjMatrix;
       private readonly List<int> vertices;
+      private readonly Dictionary<Tuple<int, int>, int> edgeWeights;
 
       public GraphAdjMatrix(int[] vertices, bool isDirected = true)
       {
          this.vertices = vertices.ToList();
          adjMatrix = new int[NumberOfVertices, NumberOfVertices];
-
+         edgeWeights = new Dictionary<Tuple<int, int>, int>(vertices.Length);
          IsDirected = isDirected;
       }
 
       public int NumberOfVertices => vertices.Count;
+      public int GetEdgeWeight(int firstVertex, int secondVertex)
+      {
+         return edgeWeights[new Tuple<int, int>(firstVertex, secondVertex)];
+      }
+
       public int NumberOfEdges { get; private set; }
 
       public void AddVertex()
@@ -41,23 +47,28 @@ namespace Graphs
       }
 
       //adds a directed edge
-      public void AddEdge(int firstVertex, int secondVertex)
+      public void AddEdge(int firstVertex, int secondVertex, int weight = 0)
       {
          if (firstVertex > NumberOfVertices || secondVertex > NumberOfVertices)
          {
             throw new IndexOutOfRangeException();
          }
 
+         ConnectVertex(firstVertex, secondVertex, weight);
+
+         if (!IsDirected)
+         {
+            ConnectVertex(secondVertex, firstVertex, weight);
+         }
+      }
+
+      private void ConnectVertex(int firstVertex, int secondVertex, int weight)
+      {
          if (adjMatrix[firstVertex, secondVertex] != 1)
          {
             adjMatrix[firstVertex, secondVertex] = 1;
             NumberOfEdges++;
-         }
-
-         if (adjMatrix[secondVertex, firstVertex] != 1)
-         {
-            adjMatrix[secondVertex, firstVertex] = 1;
-            NumberOfEdges++;
+            edgeWeights.Add(new Tuple<int, int>(firstVertex, secondVertex), weight);
          }
       }
 
